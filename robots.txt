@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /documentation/
+
+# Replace example.com with your production domain before publishing.
+Sitemap: https://example.com/sitemap.xml
