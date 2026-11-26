@@ -1,0 +1,67 @@
+html[dir="rtl"] body{direction:rtl}
+html[dir="rtl"] .primary-nav a:after{transform-origin:right}
+html[dir="rtl"] .header-search form{margin-left:0;margin-right:auto}
+html[dir="rtl"] .hero-copy,html[dir="rtl"] .page-hero-inner{text-align:right}
+html[dir="rtl"] .hero-side-note{border-left:0;border-right:1px solid var(--rose);margin-left:4%;margin-right:0}
+html[dir="rtl"] .category-strip-item{border-right:0;border-left:1px solid var(--line)}
+html[dir="rtl"] .category-strip-item:first-child{border-left:0;border-right:1px solid var(--line)}
+html[dir="rtl"] .product-tag{left:auto;right:14px}
+html[dir="rtl"] .shop-filters{direction:rtl}
+html[dir="rtl"] .filter-search img{right:auto;left:10px}
+html[dir="rtl"] .filter-search input{padding-right:10px;padding-left:34px}
+html[dir="rtl"] .bulk-intro-grid>div+div,html[dir="rtl"] .pricing-intro-grid>p{border-left:0;border-right:1px solid var(--rose);padding-left:0;padding-right:35px}
+html[dir="rtl"] .about-image-stack{padding:0 0 45px 55px}
+html[dir="rtl"] .about-image-small{right:auto;left:0}
+html[dir="rtl"] .about-image-caption{left:auto;right:12px}
+html[dir="rtl"] .faq-list details p{margin:14px 0 0 30px}
+html[dir="rtl"] .article-content blockquote{border-left:0;border-right:3px solid var(--rose)}
+html[dir="rtl"] .password-field input{padding-right:13px!important;padding-left:45px!important}
+html[dir="rtl"] .password-toggle{right:auto;left:7px}
+html[dir="rtl"] .footer-contact p img{margin-left:2px}
+html[dir="rtl"] .social-links{justify-content:flex-start}
+@media(max-width:767px){html[dir="rtl"] .bulk-intro-grid>div+div,html[dir="rtl"] .pricing-intro-grid>p{border-right:0;border-top:1px solid var(--rose);padding-right:0}html[dir="rtl"] .about-image-stack{padding:0 0 35px 35px}}
+
+html[dir="rtl"] img[src*="arrow-right"]{transform:rotate(180deg)}html[dir="rtl"] img[src*="arrow-left"]{transform:rotate(180deg)}
+
+/* RTL mirroring for the slide-over cart and directional controls. */
+html[dir="rtl"] .penora-cart-drawer {
+  inset-inline-end: 0;
+  transform: translateX(-105%);
+  box-shadow: 18px 0 50px rgba(0, 0, 0, .18);
+}
+html[dir="rtl"] .penora-cart-backdrop.is-open .penora-cart-drawer { transform: translateX(0); }
+html[dir="rtl"] .penora-cart-header,
+html[dir="rtl"] .penora-cart-subtotal,
+html[dir="rtl"] .penora-cart-item { direction: rtl; }
+html[dir="rtl"] .penora-cart-toast { right: auto; left: 24px; }
+html[dir="rtl"] .penora-cart-item-controls { justify-content: flex-start; }
+html[dir="rtl"] .penora-cart-line-total { text-align: left; }
+html[dir="rtl"] .penora-cart-continue { margin-right: auto; margin-left: auto; }
+html[dir="rtl"] .penora-cart-empty { text-align: center; }
+html[dir="rtl"] .cart-count { right: auto; left: -2px; }
+html[dir="rtl"] img[src*="arrow-up-right.svg"] { transform: scaleX(-1); }
+
+
+/* ==========================================================================
+   Audit pass (RTL): mirror remaining physical offsets and directional art.
+   ========================================================================== */
+html[dir="rtl"] .back-to-top { right: auto; left: 20px; }
+html[dir="rtl"] .skip-link { left: auto; right: 12px; }
+html[dir="rtl"] .map-caption { left: auto; right: 15px; }
+html[dir="rtl"] .offer-stamp { right: auto; left: -25px; }
+html[dir="rtl"] .split-collection > img { right: auto; left: 0; clip-path: polygon(0 0, 84% 0, 100% 100%, 0 100%); }
+html[dir="rtl"] .quick-access-grid b { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .detail-specs dd { text-align: left; }
+html[dir="rtl"] .subcategory-columns > div { border-right: 0; border-left: 1px solid var(--line); }
+html[dir="rtl"] .subcategory-columns > div:nth-child(3n) { border-left: 0; }
+html[dir="rtl"] .subcategory-columns > div:nth-child(3n+1) { padding-left: 24px; padding-right: 0; }
+html[dir="rtl"] .subcategory-columns > div:nth-child(3n) { padding-right: 24px; }
+html[dir="rtl"] .header-account { direction: rtl; }
+html[dir="rtl"] .penora-cart-totals dd, html[dir="rtl"] .penora-checkout-lines li span:last-child { text-align: left; }
+html[dir="rtl"] .penora-quickview-close { inset-inline-end: auto; inset-inline-start: 12px; }
+html[dir="rtl"] .product-card-links, html[dir="rtl"] .penora-quickview-actions { direction: rtl; }
+html[dir="rtl"] .breadcrumb span { unicode-bidi: plaintext; }
+@media (max-width: 1024px) {
+  html[dir="rtl"] .primary-nav { left: 0; right: 0; }
+  html[dir="rtl"] .primary-nav a { text-align: right; }
+}

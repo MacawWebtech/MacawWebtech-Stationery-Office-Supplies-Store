@@ -1,0 +1,76 @@
+/* Penora animations: premium banner motion, card + button hover effects. */
+:root{--ease-premium:cubic-bezier(.22,.8,.24,1);--ease-soft:cubic-bezier(.4,0,.2,1)}
+
+/* ---------- Premium banner: slow zoom, light sweep, staged text ---------- */
+.page-hero{overflow:hidden;isolation:isolate;background-image:none!important;background-color:#245451}
+.page-hero::before,.page-hero::after{content:"";position:absolute;inset:0;pointer-events:none}
+.page-hero::before{z-index:-2;background:var(--banner-image) 60% 62%/cover no-repeat;transform:scale(1.02);animation:bannerZoom 22s var(--ease-soft) infinite alternate;will-change:transform}
+.page-hero::after{z-index:-1;background:linear-gradient(90deg,rgba(36,84,81,.92),rgba(36,84,81,.38))}
+html[data-theme="dark"] .page-hero::after{background:linear-gradient(90deg,rgba(36,84,81,.88),rgba(36,84,81,.34))}
+.page-hero-inner{position:relative;z-index:1}
+.page-hero-inner::before{content:"";position:absolute;top:-40%;bottom:-40%;left:-30%;width:22%;z-index:-1;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(255,236,205,.16),transparent);transform:skewX(-18deg) translateX(-120%);animation:bannerSheen 9s var(--ease-soft) 1.4s infinite}
+@keyframes bannerZoom{from{transform:scale(1.02) translate3d(0,0,0)}to{transform:scale(1.13) translate3d(-1.2%,-1%,0)}}
+@keyframes bannerSheen{0%{transform:skewX(-18deg) translateX(-120%)}38%,100%{transform:skewX(-18deg) translateX(900%)}}
+@keyframes riseIn{from{opacity:0;transform:translate3d(0,26px,0);filter:blur(6px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes lineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.page-hero .breadcrumb,.page-hero .eyebrow,.page-hero h1,.page-hero p{animation:riseIn .95s var(--ease-premium) both}
+.page-hero .breadcrumb{animation-delay:.1s}.page-hero .eyebrow{animation-delay:.25s}.page-hero h1{animation-delay:.4s}.page-hero p{animation-delay:.58s}
+.page-hero h1::after{content:"";display:block;width:72px;height:2px;margin-top:16px;background:#C47C59;transform-origin:left;animation:lineGrow 1s var(--ease-premium) .9s both}
+html[dir="rtl"] .page-hero h1::after{transform-origin:right}
+
+/* Home heroes: gentle image drift + staged copy */
+.home-hero,.office-hero,.coming-page{background-size:cover,112%;background-position:0 0,48% 50%;animation:heroDrift 26s var(--ease-soft) infinite alternate}
+@keyframes heroDrift{from{background-position:0 0,48% 50%}to{background-position:0 0,58% 54%}}
+@keyframes panelDrift{from{background-size:108%;background-position:46% 50%}to{background-size:116%;background-position:56% 54%}}
+.hero-copy>*,.office-hero-card>*{animation:riseIn .95s var(--ease-premium) both}
+.hero-copy>:nth-child(1),.office-hero-card>:nth-child(1){animation-delay:.1s}.hero-copy>:nth-child(2),.office-hero-card>:nth-child(2){animation-delay:.25s}.hero-copy>:nth-child(3),.office-hero-card>:nth-child(3){animation-delay:.4s}.hero-copy>:nth-child(4),.office-hero-card>:nth-child(4){animation-delay:.55s}.hero-copy>:nth-child(n+5){animation-delay:.7s}
+.auth-image,.error-image{background-size:108%;animation:panelDrift 30s var(--ease-soft) infinite alternate}
+
+/* ---------- Cards: lift + shadow, image zoom ---------- */
+.product-card,.category-card,.category-strip-item,.blog-card,.testimonial,.bulk-benefit-grid article,.process-grid article,.pricing-card-grid article,.about-value-grid>*,.reason-grid>*,.contact-info,.legal-card,.team-grid>*,.about-selection-grid>*,.quick-access-grid>*,.office-product-feature,.sidebar-block,.related-article-row,.form-panel{transition:transform .45s var(--ease-premium),box-shadow .45s var(--ease-premium),border-color .3s ease,background-color .3s ease}
+@media (hover:hover){
+.product-card:hover,.category-card:hover,.blog-card:hover,.testimonial:hover,.pricing-card-grid article:hover,.about-value-grid>*:hover,.reason-grid>*:hover,.team-grid>*:hover,.quick-access-grid>*:hover,.legal-card:hover,.contact-info:hover{transform:translateY(-8px);box-shadow:0 22px 40px -18px rgba(36,84,81,.35)}
+.bulk-benefit-grid article:hover,.process-grid article:hover,.category-strip-item:hover{transform:translateY(-5px)}
+.pricing-card-featured:hover{transform:translateY(-20px)}
+}
+.product-card img,.category-card img,.category-image img,.blog-card img,.bulk-category-list img,.category-strip-item img,.about-image-main,.about-image-small,.blog-featured-image img,.promo-image img,.offer-photo img,.team-avatar img,.related-article-row img{transition:transform .9s var(--ease-premium)}
+.product-card:hover img,.category-card:hover img,.blog-card:hover img,.category-strip-item:hover img,.blog-featured:hover .blog-featured-image img,.editorial-promo:hover .promo-image img,.related-article-row:hover img{transform:scale(1.07)}
+.product-card .product-image,.category-image,.blog-card>a:first-child,.blog-featured-image,.promo-image,.offer-photo{overflow:hidden}
+.bulk-benefit-grid img,.about-value-grid img,.reason-grid img,.quick-access-grid img,.contact-info img{transition:transform .5s var(--ease-premium)}
+.bulk-benefit-grid article:hover img,.about-value-grid>*:hover img,.reason-grid>*:hover img,.quick-access-grid>*:hover img,.contact-info:hover img{transform:translateY(-4px) scale(1.12) rotate(-4deg)}
+.process-grid article>span{display:inline-block;transition:transform .5s var(--ease-premium),color .3s}.process-grid article:hover>span{transform:translateX(8px);color:#C47C59}
+
+/* ---------- Buttons: lift, shine sweep, arrow nudge ---------- */
+.button,.header-book-now,.nav-book-now,.text-link,.icon-button,.back-to-top{transition:transform .35s var(--ease-premium),box-shadow .35s var(--ease-premium),background-color .3s ease,color .3s ease,border-color .3s ease}
+.button,.header-book-now,.nav-book-now{position:relative;overflow:hidden;isolation:isolate}
+.button::after,.header-book-now::after,.nav-book-now::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;z-index:-1;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .7s var(--ease-premium)}
+@media (hover:hover){
+.button:hover,.header-book-now:hover,.nav-book-now:hover{transform:translateY(-3px);box-shadow:0 14px 26px -12px rgba(36,84,81,.55)}
+.button:hover::after,.header-book-now:hover::after,.nav-book-now:hover::after{left:130%}
+.icon-button:hover{transform:translateY(-2px) scale(1.06)}
+.back-to-top:hover{transform:translateY(-4px)}
+}
+.button:active,.header-book-now:active{transform:translateY(0) scale(.97);box-shadow:none}
+.button img,.text-link img,.inline-arrow{transition:transform .35s var(--ease-premium)}
+.button:hover img,.text-link:hover img,.text-link:hover .inline-arrow{transform:translateX(5px)}
+.cart-count.bump{animation:cartBump .5s var(--ease-premium)}
+@keyframes cartBump{40%{transform:scale(1.5)}100%{transform:scale(1)}}
+.faq-list details{transition:background-color .3s ease,padding .3s ease}.faq-list details[open]{background:rgba(201,162,75,.07)}
+.faq-list summary:after{transition:transform .35s var(--ease-premium)}
+.faq-list details[open] p{animation:riseIn .5s var(--ease-premium) both}
+.primary-nav>a,.nav-item>a{transition:color .3s ease}
+
+@media (prefers-reduced-motion:reduce){
+.page-hero::before,.page-hero-inner::before,.home-hero,.office-hero,.auth-image,.error-image,.coming-page{animation:none!important}
+.page-hero .breadcrumb,.page-hero .eyebrow,.page-hero h1,.page-hero p,.hero-copy>*,.office-hero-card>*,.page-hero h1::after{animation:none!important}
+}
+
+/* ---------- Hover effects (replace the old scroll-reveal entrances) ---------- */
+.about-image-stack,.bulk-feature-image,.article-main-image,.map-placeholder{overflow:hidden}
+.about-image-stack img,.bulk-feature-image img,.article-main-image img{transition:transform .9s var(--ease-premium)}
+.faq-list details,.contact-detail,.pricing-note,.sidebar-block,.brand-strip-inner>*,.about-highlights>*,.corporate-stats>*,.bulk-category-list>a{transition:transform .4s var(--ease-premium),box-shadow .4s var(--ease-premium),background-color .3s ease}
+@media (hover:hover){
+.about-image-stack:hover img,.bulk-feature-image:hover img,.article-main-image:hover img,.bulk-category-list>a:hover img{transform:scale(1.06)}
+.sidebar-block:hover,.about-highlights>*:hover,.corporate-stats>*:hover,.brand-strip-inner>*:hover,.contact-detail:hover,.bulk-category-list>a:hover{transform:translateY(-4px)}
+.sidebar-block:hover,.about-highlights>*:hover,.corporate-stats>*:hover{box-shadow:0 16px 30px -18px rgba(36,84,81,.35)}
+}

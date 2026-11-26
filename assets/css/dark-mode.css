@@ -1,0 +1,176 @@
+html[data-theme="dark"]{
+ --page:var(--burgundy);--surface:rgba(243,237,226,.08);--surface-strong:rgba(243,237,226,.10);
+ --ink:var(--warm-white);--muted:rgba(243,237,226,.72);--line:rgba(243,237,226,.22);
+ --rose-wash:rgba(196,124,89,.16);--burgundy-wash:rgba(243,237,226,.08);
+ color-scheme:dark;
+}
+html[data-theme="dark"] body{background:var(--page);color:var(--ink)}
+html[data-theme="dark"] .site-header,html[data-theme="dark"] .primary-nav{background:var(--burgundy)}
+html[data-theme="dark"] .brand,html[data-theme="dark"] .primary-nav a,html[data-theme="dark"] .icon-button{color:var(--warm-white)}
+html[data-theme="dark"] .icon-button img{filter:brightness(0) saturate(100%) invert(72%) sepia(6%) saturate(287%) hue-rotate(360deg) brightness(131%) contrast(94%)}
+html[data-theme="dark"] .home-hero{background-image:linear-gradient(90deg,rgba(36,84,81,.94) 0%,rgba(36,84,81,.82) 43%,rgba(36,84,81,.12) 78%),var(--hero-image)}
+html[data-theme="dark"] .hero-copy p,html[data-theme="dark"] .hero-note,html[data-theme="dark"] .hero-side-note{color:var(--warm-white)}
+html[data-theme="dark"] .home-hero .button-dark,html[data-theme="dark"] .button-outline{background:var(--rose);color:var(--burgundy);border-color:var(--rose)}
+html[data-theme="dark"] .button-dark{background:var(--rose);color:var(--burgundy)}
+html[data-theme="dark"] .button-outline:hover,html[data-theme="dark"] .button-dark:hover{background:var(--warm-white);color:var(--burgundy)}
+html[data-theme="dark"] .office-hero-card,html[data-theme="dark"] .auth-panel,html[data-theme="dark"] .form-panel,html[data-theme="dark"] .simple-modal{background:var(--burgundy);color:var(--warm-white)}
+html[data-theme="dark"] .office-hero-card p,html[data-theme="dark"] .form-panel p,html[data-theme="dark"] .auth-panel p{color:var(--muted)}
+html[data-theme="dark"] .newsletter-form input,html[data-theme="dark"] .shop-filters select,html[data-theme="dark"] .shop-filters input[type=search],html[data-theme="dark"] .shop-toolbar select,html[data-theme="dark"] .blog-filters input,html[data-theme="dark"] .blog-filters select,html[data-theme="dark"] .arrivals-sort select,html[data-theme="dark"] .form-panel input:not([type=checkbox]):not([type=file]),html[data-theme="dark"] .form-panel select,html[data-theme="dark"] .form-panel textarea,html[data-theme="dark"] .auth-panel input,html[data-theme="dark"] .header-search input{background:rgba(243,237,226,.08);color:var(--warm-white);border-color:var(--line)}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:rgba(243,237,226,.52)}
+html[data-theme="dark"] .category-strip,html[data-theme="dark"] .new-arrivals-section,html[data-theme="dark"] .newsletter-section,html[data-theme="dark"] .category-sublist,html[data-theme="dark"] .map-section,html[data-theme="dark"] .bulk-form-section,html[data-theme="dark"] .pricing-faq{background:rgba(243,237,226,.06)}
+html[data-theme="dark"] .testimonial,html[data-theme="dark"] .category-image,html[data-theme="dark"] .product-image-wrap{background:rgba(243,237,226,.08)}
+html[data-theme="dark"] .testimonial>p,html[data-theme="dark"] .category-copy h3,html[data-theme="dark"] .product-info h3,html[data-theme="dark"] .detail-specs dt,html[data-theme="dark"] .detail-specs dd{color:var(--warm-white)}
+html[data-theme="dark"] .reason-grid,html[data-theme="dark"] .reason-grid article{border-color:var(--line)}
+html[data-theme="dark"] .reason-grid img,html[data-theme="dark"] .bulk-benefit-grid img,html[data-theme="dark"] .contact-info-list img{filter:brightness(0) saturate(100%) invert(65%) sepia(48%) saturate(528%) hue-rotate(330deg) brightness(78%) contrast(95%)}
+html[data-theme="dark"] .product-detail-copy .detail-description,html[data-theme="dark"] .product-detail-copy .product-category{color:var(--muted)}
+html[data-theme="dark"] .article-content .article-lead,html[data-theme="dark"] .article-content h2,html[data-theme="dark"] .article-content p{color:var(--warm-white)}
+html[data-theme="dark"] .article-content blockquote{background:rgba(243,237,226,.08)}
+html[data-theme="dark"] .page-hero{background-image:linear-gradient(90deg,rgba(36,84,81,.88),rgba(36,84,81,.48)),var(--banner-image)}
+html[data-theme="dark"] .coming-page{background-image:linear-gradient(90deg,rgba(36,84,81,.95),rgba(36,84,81,.78)),var(--coming-image)}
+html[data-theme="dark"] .coming-page .brand,html[data-theme="dark"] .coming-content h1,html[data-theme="dark"] .coming-content>p{color:var(--warm-white)}
+html[data-theme="dark"] .error-copy h2,html[data-theme="dark"] .error-copy p{color:var(--warm-white)}
+html[data-theme="dark"] .map-pin-visual{background:var(--rose);color:var(--burgundy)}
+html[data-theme="dark"] .map-pin-visual img{filter:none}
+html[data-theme="dark"] .auth-options a,html[data-theme="dark"] .auth-switch a{color:var(--rose)}
+html[data-theme="dark"] .page-hero .breadcrumb{color:rgba(243,237,226,.82)}
+html[data-theme="dark"] .skip-link{color:var(--burgundy)}
+
+html[data-theme="dark"] .inline-arrow{filter:brightness(0) saturate(100%) invert(65%) sepia(48%) saturate(528%) hue-rotate(330deg) brightness(78%) contrast(95%)}html[data-theme="dark"] .eyebrow{color:var(--rose)}html[data-theme="dark"] .text-link:hover{color:var(--warm-white)}
+
+html[data-theme="dark"] .filter-search img,html[data-theme="dark"] .password-toggle img,html[data-theme="dark"] .contact-detail img{filter:brightness(0) saturate(100%) invert(72%) sepia(6%) saturate(287%) hue-rotate(360deg) brightness(131%) contrast(94%)}
+html[data-theme="dark"] .file-upload-box img{filter:brightness(0) saturate(100%) invert(65%) sepia(48%) saturate(528%) hue-rotate(330deg) brightness(78%) contrast(95%)}
+html[data-theme="dark"] .social-links img{filter:brightness(0) saturate(100%) invert(72%) sepia(6%) saturate(287%) hue-rotate(360deg) brightness(131%) contrast(94%)}
+
+html[data-theme="dark"] .form-message{color:var(--warm-white)}html[data-theme="dark"] .form-message.is-error{color:var(--rose)}html[data-theme="dark"] .error-copy h1{color:var(--ink)}
+
+html[data-theme="dark"] .footer-newsletter input{background:rgba(243,237,226,.07);color:var(--warm-white)}
+
+/* Monochrome external SVGs use a consistent high-contrast treatment in dark mode. */
+html[data-theme="dark"] .icon-button img,
+html[data-theme="dark"] img[src*="/icons/svg/search.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/shopping-bag.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/user.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/menu.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/sun.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/moon.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/arrow-right.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/arrow-left.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/arrow-up-right.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/arrow-up.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/facebook.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/instagram.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/linkedin.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/pinterest.svg"],
+html[data-theme="dark"] img[src*="/icons/svg/youtube.svg"] {
+  filter: invert(1) brightness(1.8);
+}
+/* Footer social marks already render white on the dark footer surface. */
+html[data-theme="dark"] .social-links img { filter: brightness(0) invert(1); }
+html[data-theme="dark"] .penora-cart-drawer,
+html[data-theme="dark"] .penora-cart-footer,
+html[data-theme="dark"] .penora-checkout-modal {
+  background: var(--burgundy);
+  color: var(--warm-white);
+}
+html[data-theme="dark"] .penora-cart-header,
+html[data-theme="dark"] .penora-cart-item,
+html[data-theme="dark"] .penora-cart-footer { border-color: var(--line); }
+html[data-theme="dark"] .penora-cart-header h2,
+html[data-theme="dark"] .penora-cart-item-copy h3,
+html[data-theme="dark"] .penora-cart-line-total,
+html[data-theme="dark"] .penora-cart-subtotal,
+html[data-theme="dark"] .penora-cart-subtotal strong,
+html[data-theme="dark"] .penora-cart-close,
+html[data-theme="dark"] .penora-cart-quantity button,
+html[data-theme="dark"] .penora-cart-quantity span,
+html[data-theme="dark"] .penora-checkout-modal h2 { color: var(--warm-white); }
+html[data-theme="dark"] .penora-cart-item-image,
+html[data-theme="dark"] .penora-cart-quantity { border-color: var(--line); background: rgba(243,237,226,.07); }
+html[data-theme="dark"] .penora-cart-empty h3 { color: var(--warm-white); }
+html[data-theme="dark"] .penora-cart-empty img { filter: invert(1) brightness(1.8); }
+html[data-theme="dark"] .penora-cart-toast { border-color: var(--line); background: var(--surface-strong); color: var(--warm-white); }
+html[data-theme="dark"] .penora-checkout-modal p { color: var(--muted); }
+html[data-theme="dark"] .shop-filters select,
+html[data-theme="dark"] .shop-toolbar select,
+html[data-theme="dark"] .form-panel input,
+html[data-theme="dark"] .form-panel select,
+html[data-theme="dark"] .form-panel textarea,
+html[data-theme="dark"] .auth-panel input,
+html[data-theme="dark"] .newsletter-form input,
+html[data-theme="dark"] .header-search input {
+  background: var(--surface-strong);
+  color: var(--warm-white);
+  border-color: var(--line);
+}
+html[data-theme="dark"] select option { background: var(--burgundy); color: var(--warm-white); }
+html[data-theme="dark"] .filter-mobile-toggle { background: var(--surface); color: var(--warm-white); border-color: var(--line); }
+html[data-theme="dark"] .primary-nav a.active,
+html[data-theme="dark"] .primary-nav a:hover,
+html[data-theme="dark"] .footer-col > a:hover,
+html[data-theme="dark"] .text-link:hover { color: var(--rose); }
+html[data-theme="dark"] .product-tag { background: var(--rose); color: var(--burgundy); }
+html[data-theme="dark"] .penora-cart-checkout { background: var(--rose); color: var(--burgundy); }
+
+/* All remaining external monochrome icon assets share the same dark-mode contrast. */
+html[data-theme="dark"] img[src*="/icons/svg/"]:not([src*="favicon.svg"]) {
+  filter: invert(1) brightness(1.8);
+}
+html[data-theme="dark"] .map-pin-visual img[src*="/icons/svg/"] { filter: none; }
+html[data-theme="dark"] .social-links img[src*="/icons/svg/"],
+html[data-theme="dark"] .button-dark img[src*="/icons/svg/"] { filter: invert(1) brightness(1.8); }
+
+
+/* ==========================================================================
+   Audit pass (dark): one authoritative icon system plus contrast fixes.
+   Icon sources are monochrome forest green, so white needs an explicit filter.
+   ========================================================================== */
+html[data-theme="dark"] img[src*="/icons/svg/"]:not([src*="favicon.svg"]) { filter: brightness(0) invert(1); }
+/* Icons that sit on gold or cream surfaces keep their native dark ink. */
+html[data-theme="dark"] .button-dark img[src*="/icons/svg/"],
+html[data-theme="dark"] .button-gold img[src*="/icons/svg/"],
+html[data-theme="dark"] .button-outline img[src*="/icons/svg/"],
+html[data-theme="dark"] .product-tag img[src*="/icons/svg/"],
+html[data-theme="dark"] .map-pin-visual img[src*="/icons/svg/"],
+html[data-theme="dark"] .penora-cart-checkout img[src*="/icons/svg/"],
+html[data-theme="dark"] .social-links a:hover img[src*="/icons/svg/"] { filter: none; }
+
+html[data-theme="dark"] .site-footer { border-top: 1px solid var(--line); }
+html[data-theme="dark"] .pricing-card-grid article { border-color: var(--line); }
+html[data-theme="dark"] .pricing-card-featured { background: var(--rose-wash); border-color: var(--rose) !important; color: var(--warm-white); }
+html[data-theme="dark"] .pricing-card-featured h3 { color: var(--warm-white); }
+html[data-theme="dark"] .pricing-card-featured p,
+html[data-theme="dark"] .pricing-card-featured li { color: var(--muted); }
+html[data-theme="dark"] .product-info h3 a:hover,
+html[data-theme="dark"] .blog-card h3 a:hover,
+html[data-theme="dark"] .breadcrumb a:hover { color: var(--rose); }
+html[data-theme="dark"] .product-quick-view { color: var(--warm-white); border-color: var(--line); }
+html[data-theme="dark"] .product-quick-view:hover { color: var(--rose); border-color: var(--rose); }
+html[data-theme="dark"] .legal-notes { background: var(--surface); }
+html[data-theme="dark"] .legal-notes h2, html[data-theme="dark"] .legal-notes p { color: var(--warm-white); }
+
+/* Cart and quick view surfaces. */
+html[data-theme="dark"] .penora-quickview { background: var(--burgundy); color: var(--warm-white); border: 1px solid var(--line); }
+html[data-theme="dark"] .penora-quickview-copy h2,
+html[data-theme="dark"] .penora-quickview-price,
+html[data-theme="dark"] .penora-quickview-close { color: var(--warm-white); }
+html[data-theme="dark"] .penora-quickview-copy p, html[data-theme="dark"] .penora-quickview-stock { color: var(--muted); }
+html[data-theme="dark"] .penora-quickview-image { background: var(--surface); }
+html[data-theme="dark"] .penora-cart-totals,
+html[data-theme="dark"] .penora-cart-totals dt,
+html[data-theme="dark"] .penora-cart-totals dd { color: var(--warm-white); }
+html[data-theme="dark"] .penora-cart-total { border-color: var(--line); }
+html[data-theme="dark"] .penora-cart-note,
+html[data-theme="dark"] .penora-cart-kicker,
+html[data-theme="dark"] .penora-cart-item-price,
+html[data-theme="dark"] .penora-cart-remove,
+html[data-theme="dark"] .penora-cart-continue,
+html[data-theme="dark"] .penora-cart-empty p { color: var(--muted); }
+html[data-theme="dark"] .penora-cart-remove:hover,
+html[data-theme="dark"] .penora-cart-continue:hover,
+html[data-theme="dark"] .penora-cart-bulk:hover { color: var(--rose); }
+html[data-theme="dark"] .penora-cart-bulk { color: var(--warm-white); }
+html[data-theme="dark"] .penora-checkout-lines, html[data-theme="dark"] .penora-checkout-lines li { border-color: var(--line); color: var(--warm-white); }
+html[data-theme="dark"] .penora-checkout-order { color: var(--warm-white); }
+html[data-theme="dark"] .cart-count { border-color: var(--burgundy); background: var(--rose); color: var(--burgundy); }
+
+html[data-theme="dark"] .hero-side-note{background:rgba(36,84,81,.94);color:var(--warm-white);box-shadow:0 14px 30px -16px rgba(0,0,0,.6)}html[data-theme="dark"] .hero-side-note span{color:var(--rose)}
